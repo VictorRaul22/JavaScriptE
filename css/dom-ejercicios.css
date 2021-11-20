@@ -106,10 +106,4 @@ img{
     color: var(--second-color);
     background-color: var(--main-modal-color);
 }
-/***********Alarma y reloj digital*************/
-#reloj{
-    display: none;
-}
-#reloj.active-reloj{
-    display: block;
-}
+
