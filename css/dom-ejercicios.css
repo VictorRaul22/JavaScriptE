@@ -120,3 +120,57 @@ img{
     border-radius: 50%;
     background: var(--main-color);
 }
+/****************ScrollTopButton*********************/
+.scroll-top-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    right: calc(4.25rem + 1vw);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    outline: none;
+    border: none;
+    transition: background-color 300ms ,color 300ms,visibility 300ms,opacity 300ms ease-out;
+}
+.scroll-top-btn:hover{
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+/****************DarkThemeButton*********************/
+.dark-theme-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;
+    left: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--second-color);
+    outline: none;
+    border: none;
+    transition: background-color 300ms ,color 300ms ease-out;
+}
+.dark-theme-btn:hover{
+    cursor: pointer;
+    background-color: var(--second-color);
+    color: var(--main-color);
+}
+
+.dark-mode{
+    background-color: var(--second-color);
+    color: var(--main-color);    
+}
