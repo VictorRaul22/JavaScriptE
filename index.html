@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-dark>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/hamburgers.css" />
     <link rel="stylesheet" href="css/dom-ejercicios.css" />
   </head>
-  <body>
+  <body data-dark>
     <header class="header">
       <h1>Ejericios del DOM</h1>
     </header>
@@ -46,7 +46,8 @@
             </article>
         </section>
         <section id="seccion3" class="section">
-            <h2>Seccion 3</h2>
+            <h2>Cuneta regresiva</h2>
+            <div id="countdown"></div>
         </section>
         <section id="seccion4" class="section">
             <h2>Seccion 4</h2>
@@ -55,6 +56,8 @@
             <h2>Seccion 5</h2>
         </section>
     </main>
+    <button class="scroll-top-btn hidden">&#11014;</button>
+    <button class="dark-theme-btn">🌙</button>
     <script src="js/index_dom.js" type="module"></script>
   </body>
 </html>
