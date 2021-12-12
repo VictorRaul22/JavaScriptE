@@ -6,6 +6,7 @@ import scrollTopButton from "./boton_scroll.js";
 import darkTheme from "./thema_oscuro.js";
 import responsiveMedia from "./responsive.js";
 import responsiveTester from "./prueba_responsive.js";
+import userDeviceInfo from "./deteccion_dispositivos.js";
 
 const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -28,6 +29,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124859.25082824552!2d-77.11185254179688!3d-12.05373059999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9d787d6115d%3A0xcd053c1cd4c95294!2sHiper%20plazaVea%20Alfonso%20Ugarte!5e0!3m2!1ses-419!2spe!4v1639176886670!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`
   );
   responsiveTester("responsive-tester");
+  userDeviceInfo("user-device")
 });
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
