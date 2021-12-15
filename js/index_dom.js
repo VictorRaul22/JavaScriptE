@@ -10,6 +10,8 @@ import userDeviceInfo from "./deteccion_dispositivos.js";
 import networkStatus from "./deteccion_red.js";
 import webCam from "./deteccion_webcam.js";
 import getGeolocation from "./geolocalizacion.js";
+import searchFilters from "./filtro_busqueda.js";
+import sorteo from "./sorteo.js";
 
 
 const d = document;
@@ -36,7 +38,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
   userDeviceInfo("user-device");
   networkStatus();
   webCam("webcam");
-  getGeolocation("geo")
+  getGeolocation("geo");
+  searchFilters(".card-filter",".card");
+  sorteo(".item","#ganador");
 });
 
 d.addEventListener("keydown", (e) => {
