@@ -61,7 +61,7 @@ img{
     opacity: 0;
     transform: translate(-100%,0);
     transition: transform 300ms ease,opacity 300ms ease;
-    
+    overflow-y: scroll;
 }
 .panel.is-active{
     transform: translate(0,0);
