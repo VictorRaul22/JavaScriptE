@@ -1,5 +1,5 @@
 const d=document;
-export default function slider(obj=null){
+export default function slider(){
     const $nextBtn=d.querySelector(".slider-btns .next"),
         $prevBtn=d.querySelector(".slider-btns .prev"),
         $slides=d.querySelectorAll(".slider-slide");
@@ -13,7 +13,6 @@ export default function slider(obj=null){
                     i=$slides.length-1;
                 }
                 $slides[i].classList.add("active");
-                waiting=false;
             }
             if(e.target===$nextBtn ){
                 e.preventDefault();
@@ -23,7 +22,6 @@ export default function slider(obj=null){
                     i=0;
                 }
                 $slides[i].classList.add("active");
-                waiting=false;
             }
         })
 }

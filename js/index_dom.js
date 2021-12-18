@@ -13,6 +13,8 @@ import getGeolocation from "./geolocalizacion.js";
 import searchFilters from "./filtro_busqueda.js";
 import draw from "./sorteo.js";
 import slider from "./carrusel.js";
+import scrollSpy from "./scroll_espia.js";
+import intelligentVideo from "./video_int.js";
 
 
 const d = document;
@@ -42,10 +44,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
   getGeolocation("geo");
   searchFilters(".card-filter",".card");
   draw("#winner-btn",".player");
-  slider({
-    auto:true,
-    interval:4000
-  });
+  slider();
+  scrollSpy("");
+  intelligentVideo();
 });
 
 d.addEventListener("keydown", (e) => {
