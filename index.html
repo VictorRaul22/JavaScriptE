@@ -32,8 +32,8 @@
         <a href="#seccion11"data-scroll-spy>Sorteo</a>
         <a href="#seccion12"data-scroll-spy>Responsive slider</a>
         <a href="#seccion13"data-scroll-spy>video Inteligente</a>
-        <a href="#seccion14"data-scroll-spy>Seccion 14</a>
-        <a href="#seccion15"data-scroll-spy>Seccion 15</a>
+        <a href="#seccion14"data-scroll-spy>Validacion de formulario</a>
+        <a href="#seccion15"data-scroll-spy>Narrador</a>
       </nav>
     </aside>
     <main>
@@ -177,10 +177,33 @@
           <video src="assets/videoTest.mp4" muted controls loop data-smart-video></video>
         </section>
         <section id="seccion14" class="section" data-scroll-spy>
-          <h2>Seccion 14</h2>
+          <h2>Validaciones de Formulario</h2>
+          <form target="_blank" action="https://formsubmit.co/victor-raul-22@hotmail.com" method="POST" class="contact-form">
+            <!-- //formsubmit.co -->
+            <legend>Envianos tus comentarios</legend>
+            <input type="text" name="name" placeholder="Escribe tu nombre" title="El nombre solo acepta letras y espacion en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+            <input type="email" name="email" placeholder="Escribe tu email" title="Escribe tu correo"  pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido" required>
+            <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios" title="tu comentario no debe de exceder mas de 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+
+            <input type="submit" value="Enviar">
+            <div class="contact-form-loader none">
+              <img src="assets/oval.svg" alt="Cargando">
+            </div>
+            <div class="contact-form-response none">
+              <p>Los datos han sido enviados</p>
+            </div>
+          </form>
         </section>
         <section id="seccion15" class="section" data-scroll-spy>
-          <h2>Seccion 15</h2>
+          <h2>Narrador</h2>
+          <form class="form-speak">
+            <select name="select" id="" class="select" required>
+              <option disabled selected class="select__option">-- Eligue una Voz --</option>
+            </select>
+            <textarea name="texto" class="form-speak__text" cols="60" rows="6" placeholder="Ingresa texto para leerlo"></textarea>
+            <button type="button" class="form-speak__btn">Leer texto</button>
+          </form>
         </section>
     </main>
     <button class="scroll-top-btn hidden">&#11014;</button>
